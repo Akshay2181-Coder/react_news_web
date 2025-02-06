@@ -1,9 +1,7 @@
-import {Component} from "react";
 import {format} from 'date-fns';
 
-export  class NewItem extends Component {
-    render() {
-       let  {title, description, image, newsUrl,publishedAt,author,source} = this.props;
+const NewItem =(props)=>{
+       let  {title, description, image, newsUrl,publishedAt,author,source} = props;
         return (
             <div className="my-2">
                 <div className="card">
@@ -21,7 +19,7 @@ export  class NewItem extends Component {
                 </div>
             </div>
         );
-    }
+
 }
 
 export default NewItem;
